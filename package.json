@@ -1,13 +1,23 @@
 {
   "name": "netlify-cms-yoast-seo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "GPL-3.0",
   "keywords": [
     "Yoast",
     "SEO",
     "text analysis",
-    "Netlify CMS",
+    "Netlify CMS"
   ],
+  "homepage": "https://github.com/indigotree/netlify-cms-yoast-seo",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/indigotree/netlify-cms-yoast-seo.git"
+  },
+  "author": {
+    "name": "Indigo Tree",
+    "email": "helloworld@indigotree.co.uk",
+    "url": "https://indigotree.co.uk"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
@@ -25,6 +35,6 @@
   "scripts": {
     "start": "webpack --watch",
     "build:production": "webpack --mode=production",
-    "stats": "webpack --profile --json > stats.json && ./node_modules/.bin/webpack-bundle-analyzer stats.json"
+    "prepublish": "npm run build:production"
   }
 }

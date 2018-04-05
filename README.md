@@ -6,13 +6,20 @@ YoastSEO content assessments for Netlify CMS.
 
 ## Demo
 
-You can find a working demo in the [demo](/demo) directory.
+You can find the demo code in the [demo](/demo) directory.
 
 You can also check out a standalone demo (without Netlify CMS) here: [https://content-score.indigotree.co.uk](https://content-score.indigotree.co.uk)
 
 ## Screenshot
 
 ![screenshot showing yoast seo assessments in netlify cms](netlify-cms-yoast-seo-screenshot.png)
+
+## CDN
+
+```
+https://unpkg.com/netlify-cms-yoast-seo@~1.0/dist/main.css
+https://unpkg.com/netlify-cms-yoast-seo@~1.0/dist/main.js
+```
 
 ## Usage
 
@@ -28,7 +35,7 @@ You will need to include the following 4 fields in each of your collections:
 You can then use a custom preview template to render the assessment results as shown below:
 
 ```js
-CMS.registerPreviewStyle('../dist/main.css');
+CMS.registerPreviewStyle('https://unpkg.com/netlify-cms-yoast-seo@~1.0/dist/main.css');
 
 CMS.registerPreviewTemplate('page', createClass({
     render: function () {

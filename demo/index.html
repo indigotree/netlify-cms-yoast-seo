@@ -12,15 +12,12 @@
 </head>
 <body>
 
-    <script src="../dist/main.js"></script>
+    <script src="https://unpkg.com/netlify-cms-yoast-seo@~1.0/dist/main.js"></script>
     <script src="https://unpkg.com/netlify-cms@~1.4/dist/cms.js"></script>
 
     <script>
 
-
-
-
-    CMS.registerPreviewStyle('../dist/main.css');
+    CMS.registerPreviewStyle('https://unpkg.com/netlify-cms-yoast-seo@~1.0/dist/main.css');
     CMS.registerPreviewTemplate('page', createClass({
         render: function () {
             const entry = this.props.entry
