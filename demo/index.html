@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Content Manager</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/netlify-cms@1.4/dist/cms.css" />
+
+</head>
+<body>
+
+    <script src="../dist/main.js"></script>
+    <script src="https://unpkg.com/netlify-cms@~1.4/dist/cms.js"></script>
+
+    <script>
+
+
+
+
+    CMS.registerPreviewStyle('../dist/main.css');
+    CMS.registerPreviewTemplate('page', createClass({
+        render: function () {
+            const entry = this.props.entry
+            const title = entry.getIn(['data', 'title']) || ''
+
+            YOAST.setContent({
+                title: title,
+                description: entry.getIn(['data', 'description']) || '',
+                keyword: entry.getIn(['data', 'yoast_keyword']) || '',
+                text: entry.getIn(['data', 'body']) || '',
+                titleWidth: title.split('').length * 5 // 5px is an average width of each character ;)
+            })
+
+            return h('div', {},
+                this.props.widgetFor('body'),
+                YOAST.getScoresAsHTML(h)
+            );
+        }
+    }));
+
+    </script>
+
+</body>
+</html>

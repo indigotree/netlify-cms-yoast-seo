@@ -1,0 +1,18 @@
+backend:
+  name: test-repo
+  
+media_folder: "static/uploads"
+public_folder: "/uploads"
+collections:
+  
+  - name: "page"
+    label: "Page"
+    folder: "content"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Focus Keyword", name: "yoast_keyword", widget: "string" }
+      - { label: "Meta Description", name: "description", widget: "string" }
