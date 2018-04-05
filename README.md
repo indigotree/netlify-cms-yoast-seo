@@ -27,7 +27,7 @@ You will need to include the following 4 fields in each of your collections:
 
 You can then use a custom preview template to render the assessment results as shown below:
 
-```
+```js
 CMS.registerPreviewStyle('../dist/main.css');
 
 CMS.registerPreviewTemplate('page', createClass({
