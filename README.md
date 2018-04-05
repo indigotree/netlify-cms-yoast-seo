@@ -10,6 +10,10 @@ You can find a working demo in the [demo](/demo) directory.
 
 You can also check out a standalone demo (without Netlify CMS) here: [https://content-score.indigotree.co.uk](https://content-score.indigotree.co.uk)
 
+## Screenshot
+
+![screenshot showing yoast seo assessments in netlify cms](netlify-cms-yoast-seo-screenshot.png)
+
 ## Usage
 
 Currently, assessment results are rendered within a CMS preview template. This means you will need custom preview templates for each of the collections you would like assessments on.
