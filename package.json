@@ -1,4 +1,13 @@
 {
+  "name": "netlify-cms-yoast-seo",
+  "version": "1.0.0",
+  "license": "GPL-3.0",
+  "keywords": [
+    "Yoast",
+    "SEO",
+    "text analysis",
+    "Netlify CMS",
+  ],
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
