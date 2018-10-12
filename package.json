@@ -28,8 +28,8 @@
     "lodash": "^4.17.5",
     "snarkdown": "^1.2.2",
     "style-loader": "^0.20.3",
-    "webpack": "^4.1.1",
-    "webpack-cli": "^2.0.11",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
     "yoastseo": "^1.33.0"
   },
   "scripts": {
