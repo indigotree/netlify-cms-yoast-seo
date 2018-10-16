@@ -1,6 +1,6 @@
 {
   "name": "netlify-cms-yoast-seo",
-  "version": "1.0.4",
+  "version": "1.0.3",
   "license": "GPL-3.0",
   "keywords": [
     "Yoast",
@@ -30,7 +30,7 @@
     "style-loader": "^0.20.3",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
-    "yoastseo": "^1.30.1"
+    "yoastseo": "~1.30.1"
   },
   "scripts": {
     "start": "webpack --watch",
