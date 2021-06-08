@@ -18,6 +18,7 @@
     "email": "helloworld@indigotree.co.uk",
     "url": "https://indigotree.co.uk"
   },
+  "main": "dist/main.js",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
