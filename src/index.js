@@ -1,4 +1,5 @@
 import App from './App'
 import './main.css'
 
-window.YOAST = new App();
+const YOAST = new App();
+export default YOAST;
